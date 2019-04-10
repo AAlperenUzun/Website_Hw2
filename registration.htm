@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+&emsp;&emsp;&emsp;
+<nav class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
+	<a class="navbar-brand" href="#"><img src="https://blog.indiefolio.com/wp-content/uploads/2015/07/blogologo.png" alt="Website"width="200" height="60"/></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+
+		<ul class="nav navbar-nav nav-tabs ">
+			<li class="nav-item"><a href="index.htm" class="nav-link" size="6em">HOMEPAGE</a></li>
+			<li class="nav-item"><a href="films.htm" class="nav-link">FILMS</a></li>
+			<li class="nav-item"><a href="books.htm" class="nav-link">BOOKS</a></li>
+			<li class="nav-item"><a href="musics.htm" class="nav-link">MUSICS</a></li>
+			<li class="nav-item"><a href="usefullinks.htm" class="nav-link">USEFUL LINKS</a></li>
+			<li class="nav-item"><a href="contactme.htm" class="nav-link">CONTACT ME</a></li>
+			<li class="nav-item"><a href="" class="nav-link active">REGISTER</a></li>
+		</ul>
+
+	</div>
+</nav>
+<br><br><br><br>
+
+<div class="container">
+<div class="row">
+	<label class="Label col-md-3 control-label" for="namesname"><b>Name Surname:</b></label>
+	<div class="col-md-9">
+		<input type="text" placeholder="" name="namesname"></div>
+	<label class="Label col-md-3 control-label" for="password"><b>Password:</b></label>
+	<div class="col-md-9">
+		<input type="text" placeholder="" name="password" required>
+	</div>
+	<label class="Label col-md-3 control-label" for="email"><b>E-mail:</b></label>
+	<div class="col-md-9">
+		<input type="text" placeholder="xyz@abc.com" name="email" required>
+	</div><label class="Label col-md-3 control-label" for="date"><b>Date of birth:</b></label>
+	<div class="col-md-9">
+		<input type="date" placeholder="" name="date" required>
+	</div>
+	<label class="Label col-md-3 control-label" for="department"><b>Department:</b></label>
+	<div class="col-md-9">
+		<input list="department" name="department">
+		<datalist>
+			<option value="Open Education Faculty">
+			<option value="Faculty of Pharmacy">
+			<option value="Faculty of Humanities">
+			<option value="Faculty of Education">
+			<option value="Faculty of Law">
+		</datalist>
+	</div><label class="Label col-md-3 control-label" for="gender"><b>Gender:</b></label>
+	<div class="col-md-9">
+		<input list="gender" name="gender">
+		<datalist id="gender">
+			<option value="Male">
+			<option value="Female">
+			<option value="Doesn't matter">
+		</datalist>
+	</div><br><br>	<label class="Label col-md-3 control-label" for="aboutme"><b>About Me:</b></label>
+	<div class="col-md-9">
+		<textarea name="aboutme" rows="10" cols="30"></textarea>
+	</div><label class="Label col-md-3 control-label" for="photo"><b><br>Upload Your Photo:</b></label>
+	<div class="Label col-md-9 control-label"><br>
+		<input type="file" name="img" multiple>
+	</div>
+
+	<br><br><br><br><label class="Label col-md-4 control-label" for="interests"><b>Mark Your Interests:</b></label>
+	<div class="col-md-4">
+		<input type="checkbox" name="interests" value="Autos and Vehicles">Autos and Vehicles<br>
+		<input type="checkbox" name="interests" value="Education">Education<br>
+		<input type="checkbox" name="interests" value="Gaming">Gaming<br>
+		<input type="checkbox" name="interests" value="Politics">Politics<br>
+		<input type="checkbox" name="interests" value="Politics">Science and Technology<br>
+		<button onclick="myFunc()" type="submit">Send</button>
+	</div><div class="col-md-4">
+		<input type="checkbox" name="interests" value="Comedy">Comedy<br>
+		<input type="checkbox" name="interests" value="Film and Animation">Film and Animation<br>
+		<input type="checkbox" name="interests" value="Music">Music<br>
+		<input type="checkbox" name="interests" value="Pets and Animals">Pets and Animals<br>
+		<input type="checkbox" name="interests" value="Sports">Sports<br>
+		<input type="reset" value="Reset">
+	</div>
+
+</div>
+</div>
+
+	  <script>
+function myFunc() {
+  alert("Thanks for registration.");
+}
+</script>
+</form>
+	<footer>
+		<div>Copyright © Design and Coding: <a href="#" >Ali Alperen Uzun</a></div>
+	</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
